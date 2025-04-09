@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: hsl(0, 0%, 5%);
+  text-align: center;
+}
+.top-heading{
+    font-size: 5vmin;
+    font-weight: bold;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    margin: 0;
+    padding: 3vmin;
+}
+.container{
+  height: 90vh;
+}
+.input-container{
+  height: 35vmin;
+  width: 80vmin;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 5vmin;
+      background-color: rgba(0, 0, 0, 1);
+      padding: 10vmin;
+      box-shadow: 0 0 1rem blue;
+      border-radius: 1rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+}
+.input-task{
+    font-size: 4vmin;
+    padding: 1.5vmin;
+    border-radius: 1vmin;
+}
+.doneTask{
+  color: black;
+  background: white;
+  padding: 1.5vmin;
+  font-size: 2vmin;
+  border-radius: 1rem;
+}
+.add-task-btn{
+    font-size: 3vmin;
+    width: 40vmin;
+    padding: 1vmin;
+    border-radius: 1rem;
+    background: hsl(300, 88%, 50%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.add-task-btn:hover{
+  background: hsl(300, 88%, 60%);
+}
+.del-task-btn,.move-up-btn,.move-down-btn{
+  margin: .3vmin;
+    font-size: 3vmin;
+    border: none;
+    border-radius: .5rem;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+.del-task-btn:hover,.move-up-btn:hover,.move-down-btn:hover{
+  filter: brightness(.9);
+}
+.del-task-btn{
+  background: hsl(0, 100%, 50%);
+}
+.move-up-btn,.move-down-btn{
+  background-color: rgb(14, 213, 248);
+}
+.task-container{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vmin;
+  width: 100%;
+}
+ol{
+  padding: 0;
+  list-style-type: none;
+  padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: .5vmin;
+  width: 50%;
+  background-color: hsl(0, 0%, 99%);
+  padding: 2.5vmin;
+  border: 3px solid hsla(0, 0%, 85%,.75);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+.task{
+  flex: 1;
+}
+.plus {
+  font-size: 6vmin;
+  font-size: 6vmin;
+  width: 8vmin;
+  height: 8vmin;
+  border-radius: 50%;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  position: absolute;
+  right: 5vmin;
+  bottom: 3vmin;
+  cursor: pointer;
+}
+.plus:hover{
+  filter: brightness(.9);
+ }
